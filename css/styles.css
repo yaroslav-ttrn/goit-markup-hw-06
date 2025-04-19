@@ -626,8 +626,9 @@ h6 {
 }
 
 .team-list {
-  /* display: flex;
-  gap: 24px; */
+  display: flex;
+  flex-wrap: wrap;
+  gap: 72px;
 }
 
 .team-item {
@@ -636,10 +637,6 @@ h6 {
   /* width: calc((100% - 3 * 24px) / 4); */
   box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
     0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
-}
-
-.team-item:not(:last-child) {
-  margin-bottom: 72px;
 }
 
 .team-image {
@@ -703,6 +700,7 @@ h6 {
 
   .team-item {
     width: calc((100% - 24px) / 2);
+    margin-bottom: 0;
   }
 }
 /* ? 1158px */
