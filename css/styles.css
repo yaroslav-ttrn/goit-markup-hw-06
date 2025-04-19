@@ -226,6 +226,9 @@ h6 {
 
   .address-list-link {
     padding: 0;
+    font-size: 12px;
+    line-height: 1.16667;
+    letter-spacing: 0.04em;
   }
 }
 
@@ -242,6 +245,13 @@ h6 {
 
   .header-logo {
     padding: 24px 0;
+  }
+
+  .address-list-link {
+    padding: 0;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
   }
 }
 /* -------------MOB MENU--------- */
@@ -299,12 +309,13 @@ h6 {
 }
 
 .mob-address {
+  margin-bottom: 48px;
 }
+
 .mob-address-list {
   display: flex;
   flex-direction: column;
   gap: 24px;
-  margin-bottom: 48px;
 }
 .mob-address-list-item {
 }
@@ -324,7 +335,7 @@ h6 {
 
 .mob-link-list {
   display: flex;
-  justify-content: space-between;
+  gap: 40px;
 }
 
 .mob-link {
@@ -343,6 +354,14 @@ h6 {
 .mob-link-logo {
   fill: #f4f4fd;
 }
+
+@media screen and (min-width: 768px) {
+  .mob-menu {
+    display: none;
+  }
+}
+@media screen and (min-width: 1158px) {
+}
 /* !-----------------MOB MENU-----------------! */
 
 /* --------------HEADER------------------ */
@@ -354,7 +373,7 @@ h6 {
   /* padding-top: 188px;
   padding-bottom: 188px; */
   padding: 72px 52px;
-  max-width: 1440px;
+  max-width: 320px;
   background-image: linear-gradient(
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
@@ -419,15 +438,12 @@ h6 {
 }
 
 @media screen and (min-width: 768px) {
-  .container {
-    max-width: 768px;
-  }
-
   .hero .container {
     padding: 0;
   }
 
   .hero {
+    max-width: 768px;
     padding: 112px 0;
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
@@ -459,11 +475,8 @@ h6 {
 }
 
 @media screen and (min-width: 1158px) {
-  .container {
-    max-width: 1158px;
-  }
-
   .hero {
+    max-width: 1440px;
     padding: 188px 0;
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
@@ -547,10 +560,6 @@ h6 {
 }
 /*? 768px */
 @media screen and (min-width: 768px) {
-  .container {
-    max-width: 768px;
-  }
-
   .benefits-list {
     gap: 72px 24px;
   }
@@ -567,13 +576,8 @@ h6 {
 /* ? 1158px */
 
 @media screen and (min-width: 1158px) {
-  .container {
-    max-width: 1158px;
-  }
-
   .benefits-item {
     width: calc((100% - 72px) / 4);
-    margin-bottom: 72px;
   }
 
   .benefits-item:last-child {
@@ -634,6 +638,9 @@ h6 {
     0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
 }
 
+.team-item {
+}
+
 .team-image {
   max-width: 100%;
   height: auto;
@@ -681,10 +688,6 @@ h6 {
 
 /*? 768px */
 @media screen and (min-width: 768px) {
-  .container {
-    max-width: 768px;
-  }
-
   .team .container {
     padding: 0;
     max-width: 552px;
@@ -704,10 +707,6 @@ h6 {
 /* ? 1158px */
 
 @media screen and (min-width: 1158px) {
-  .container {
-    max-width: 1158px;
-  }
-
   .team {
     padding: 120px 0 120px;
   }
@@ -806,10 +805,6 @@ h6 {
 
 /*? 768px */
 @media screen and (min-width: 768px) {
-  .container {
-    max-width: 768px;
-  }
-
   .portfolio-list {
     display: flex;
     flex-wrap: wrap;
@@ -824,10 +819,6 @@ h6 {
 /* ? 1158px */
 
 @media screen and (min-width: 1158px) {
-  .container {
-    max-width: 1158px;
-  }
-
   .portfolio {
     padding: 120px 0 120px 0;
   }
@@ -1010,10 +1001,6 @@ h6 {
 
 /*? 768px */
 @media screen and (min-width: 768px) {
-  .container {
-    max-width: 768px;
-  }
-
   .footer {
     padding: 0;
   }
@@ -1057,6 +1044,7 @@ h6 {
 @media screen and (min-width: 1158px) {
   .container {
     max-width: 1158px;
+    padding: 0 15px;
   }
 
   .footer {
@@ -1067,7 +1055,6 @@ h6 {
   .footer-wrap {
     display: flex;
     flex-wrap: nowrap;
-    padding: 0;
     gap: 0;
     justify-content: center;
   }
@@ -1317,10 +1304,6 @@ h6 {
 
 /*? 768px */
 @media screen and (min-width: 768px) {
-  .container {
-    max-width: 768px;
-  }
-
   .modal {
     width: 408px;
     padding: 72px 24px 36px 24px;
